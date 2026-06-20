@@ -1,3 +1,5 @@
+import Phaser from 'phaser';
+
 export enum Rarity { Common, Uncommon, Rare, Epic, Legendary }
 
 export const RARITY_COLORS: Record<Rarity, number> = {

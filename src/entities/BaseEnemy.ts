@@ -1,3 +1,4 @@
+import Phaser from 'phaser';
 import { GameScene } from '../scenes/GameScene';
 import { EnemyDef } from '../data/EnemyData';
 

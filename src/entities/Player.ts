@@ -1,3 +1,4 @@
+import Phaser from 'phaser';
 import { GameScene } from '../scenes/GameScene';
 import { PlayerStats } from '../data/UpgradeData';
 import { WeaponInstance, RARITY_MULTIPLIER, WEAPONS, Rarity } from '../data/WeaponData';

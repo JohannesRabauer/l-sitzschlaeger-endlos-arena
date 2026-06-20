@@ -1,3 +1,4 @@
+import Phaser from 'phaser';
 import { Player } from '../entities/Player';
 import { InputSystem } from '../systems/InputSystem';
 import { WaveSystem } from '../systems/WaveSystem';

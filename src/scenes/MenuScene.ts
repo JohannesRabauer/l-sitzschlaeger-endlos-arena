@@ -1,3 +1,4 @@
+import Phaser from 'phaser';
 import { SaveManager } from '../utils/SaveManager';
 
 export class MenuScene extends Phaser.Scene {

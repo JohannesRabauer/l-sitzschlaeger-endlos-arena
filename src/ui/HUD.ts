@@ -1,3 +1,4 @@
+import Phaser from 'phaser';
 import { GameScene } from '../scenes/GameScene';
 import { RARITY_COLORS } from '../data/WeaponData';
 

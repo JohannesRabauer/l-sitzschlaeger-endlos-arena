@@ -1,3 +1,4 @@
+import Phaser from 'phaser';
 import { UPGRADES, Upgrade } from '../data/UpgradeData';
 
 export class LevelUpScene extends Phaser.Scene {
