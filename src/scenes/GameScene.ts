@@ -39,7 +39,7 @@ export class GameScene extends Phaser.Scene {
   }
 
   update(time: number, delta: number) {
-    this.inputSystem.update();
+    this.inputSystem.update(time, delta);
     this.player.update(time, delta);
     this.waveSystem.update(time, delta);
     this.combatSystem.update(time, delta);

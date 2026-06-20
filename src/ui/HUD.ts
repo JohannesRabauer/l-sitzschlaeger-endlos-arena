@@ -55,6 +55,7 @@ export class HUD {
     this.levelText.setText(`Lv.${p.level}`);
 
     const wColor = RARITY_COLORS[p.weapon.rarity];
-    this.weaponText.setText(p.weapon.def.name).setColor(`#${wColor.toString(16).padStart(6, '0')}`);
+    const invCount = p.inventory.length > 0 ? ` (+${p.inventory.length})` : '';
+    this.weaponText.setText(`${p.weapon.def.name}${invCount}`).setColor(`#${wColor.toString(16).padStart(6, '0')}`);
   }
 }

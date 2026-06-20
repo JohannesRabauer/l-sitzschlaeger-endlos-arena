@@ -65,9 +65,12 @@ export class LootSystem {
   }
 
   private equipWeapon(weapon: WeaponInstance) {
-    // Auto-equip if better rarity
-    if (weapon.rarity >= this.scene.player.weapon.rarity) {
+    // If better than current, equip directly; otherwise add to inventory
+    if (weapon.rarity > this.scene.player.weapon.rarity) {
+      this.scene.player.addWeapon(this.scene.player.weapon);
       this.scene.player.weapon = weapon;
+    } else {
+      this.scene.player.addWeapon(weapon);
     }
   }
 }
